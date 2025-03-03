@@ -14,9 +14,12 @@ The Efficient Phone Book Management System is a C++-based application designed t
 
 6. Sort Contacts by Name (Merge Sort) : ![image](https://github.com/user-attachments/assets/2034b9e0-5f53-4dd3-8c8e-8f10162e9626)
 
-7. Sort Contacts by Name (Quick Sort) : ![image](https://github.com/user-attachments/assets/7a9c4659-95b1-495d-8741-49f9e1ff7706)
+7. Sort Contacts by Name (Quick Sort) :
+ ![image](https://github.com/user-attachments/assets/7a9c4659-95b1-495d-8741-49f9e1ff7706)
 
-8. Display All Contacts : ![Screenshot 2025-03-03 175128](https://github.com/user-attachments/assets/d980d850-8930-4665-9d1d-33b5b0dd7dcd)
+8. Display All Contacts :
+ ![Screenshot 2025-03-03 175128](https://github.com/user-attachments/assets/d980d850-8930-4665-9d1d-33b5b0dd7dcd)
 
-9. Exit : ![Screenshot 2025-03-03 175217](https://github.com/user-attachments/assets/653bb0ab-fc5d-404d-9a39-dcb7cee87d64)
+9. Exit :
+ ![Screenshot 2025-03-03 175217](https://github.com/user-attachments/assets/653bb0ab-fc5d-404d-9a39-dcb7cee87d64)
 

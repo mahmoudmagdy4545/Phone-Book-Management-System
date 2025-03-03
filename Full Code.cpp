@@ -10,26 +10,25 @@
 #include<unordered_map>
 using namespace std;
 struct Contact {
-    string phoneNumber;//primary key
+    string phoneNumber;
     string firstName,lastName,address,city,email;
     Contact* next;
 };
 vector<Contact> contacts;
 unordered_map<string, size_t> contactIndexMap;
 
-// Define B-Tree Node
 struct BTreeNode {
     bool isLeaf;
-    vector<string> keys;            // Cities
-    vector<vector<Contact>> values; // List of contacts mapped to city keys
-    vector<BTreeNode*> children;    // Pointers to child nodes
+    vector<string> keys;            
+    vector<vector<Contact>> values; 
+    vector<BTreeNode*> children;    
 };
 
-// Define the BTree class
+
 class BTree {
 private:
     BTreeNode* root;
-    int t; // Minimum degree of BTree
+    int t; 
 
 public:
     BTree(int degree) : t(degree) {
@@ -38,7 +37,7 @@ public:
     }
 
     void insert(const string& city, const Contact& contact) {
-        // Simplified: Inserts a contact into the appropriate city index.
+      
         if (root->keys.empty()) {
             root->keys.push_back(city);
             root->values.push_back({ contact });
@@ -76,10 +75,6 @@ public:
 
 
 
-
-
-
-// Function to add a contact
 void addContact(vector<Contact>& contacts) {
     Contact NewContact;
   
@@ -131,8 +126,6 @@ void displayContacts(const vector<Contact>& contacts) {
         cout <<"\nName : "<< contact.firstName << ' ' << contact.lastName << '\n' << "PhoneNumber : " << contact.phoneNumber << '\n';
     }
 }
-
-
 
 
 
@@ -276,7 +269,7 @@ void merge(vector<Contact>& phoneBook, int left, int mid, int right) {
 
     vector<Contact> leftArray(n1), rightArray(n2);
 
-    // Copy data to temporary arrays
+    
     for (int i = 0; i < n1; ++i)
         leftArray[i] = phoneBook[left + i];
     for (int i = 0; i < n2; ++i)
@@ -296,7 +289,7 @@ void merge(vector<Contact>& phoneBook, int left, int mid, int right) {
         ++k;
     }
 
-    // Copy remaining elements
+
     while (i < n1) {
         phoneBook[k] = leftArray[i];
         ++i;
